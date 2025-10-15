@@ -1,5 +1,8 @@
 #include <iostream>
+#include <Windows.h>
+#include <mmstream.h>
 #include "Calculator.h"
+#pragma comment(lib, "winmm.lib")
 using namespace std;
 int main()
 {
@@ -25,6 +28,7 @@ int main()
             result = c.calculate(x, oper, y);
         }
         cout << "Result " << "of " << x << oper << y << " is: " << result << endl;
+        PlaySound(TEXT("notification.wav"), NULL, SND_FILENAME);
     }
     return 0;
 }
