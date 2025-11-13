@@ -20,7 +20,7 @@ int main()
         cin >> x >> oper >> y;
         if (oper == '/' && y == 0)
         {
-            cout << "Math error: Attempted to divide by zero!" << endl;
+            cout << "Math error: Attempted to divide by zero!\n Dumbass." << endl;
             continue;
         }
         else
